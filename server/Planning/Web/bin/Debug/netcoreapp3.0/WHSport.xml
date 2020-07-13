@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web</name>
+    </assembly>
+    <members>
+        <member name="T:Web.Business.EnumList.RequestStateCode">
+            <summary>
+            请求状态码
+            </summary>
+        </member>
+        <member name="F:Web.Business.EnumList.RequestStateCode.OK">
+            <summary>
+            请求成功
+            </summary>
+        </member>
+        <member name="F:Web.Business.EnumList.RequestStateCode.LoginLose">
+            <summary>
+            登录失效
+            </summary>
+        </member>
+        <member name="F:Web.Business.EnumList.RequestStateCode.OperationFail">
+            <summary>
+            操作失败
+            </summary>
+        </member>
+        <member name="F:Web.Business.EnumList.RequestStateCode.SystemError">
+            <summary>
+            系统错误
+            </summary>
+        </member>
+        <member name="M:Web.Business.Filter.ApiExceptionFilterAttribute.BuildExceptionResult(System.Exception)">
+            <summary>
+            包装处理异常格式
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Business.Manage.UserManage.WriteLoginCookie(System.String)">
+            <summary>
+            写入Cookie
+            </summary>
+        </member>
+        <member name="M:Web.Business.Manage.UserManage.CheckLoginState">
+            <summary>
+            验证登录状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Business.Manage.UserManage.GetLoginUserID">
+            <summary>
+            验证Token，返回登录用户UserID
+            </summary>
+        </member>
+        <member name="M:Web.Business.Manage.UserManage.GetLoginUserID(System.String)">
+            <summary>
+            从Token获取用户UserID
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Business.Manage.UserManage.SetToken(System.Int32)">
+            <summary>
+            设置Token
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Business.Manage.UserManage.GetToken">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Controllers.JobsController.GetMonthConcise(System.DateTime)">
+            <summary>
+            获取月任务的数据
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Controllers.JobsController.Add(Web.Models.Request.ReqJobAdd)">
+            <summary>
+            添加任务
+            </summary>
+            <param name="reqJobAdd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Controllers.JobsController.Delete(System.Int32)">
+            <summary>
+            删除任务
+            </summary>
+            <param name="jobID">任务ID</param>
+            <returns></returns>\
+        </member>
+        <member name="M:Web.Controllers.JobsController.Modify(Web.Models.Request.ReqJobModify)">
+            <summary>
+            修改任务
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Controllers.LifelongTargetController.LifelongModify(System.String)">
+            <summary>
+            终生目标修改
+            </summary>
+            <param name="describe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Web.Controllers.LoginController.MinProgram(Web.Models.Request.ReqMiniProgramLogin)">
+            <summary>
+            小程序登录
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Web.Models.Request.ReqMiniProgramLogin.code">
+            <summary>
+            微信code
+            </summary>
+        </member>
+        <member name="P:Web.Models.Request.ReqMiniProgramLogin.rawData">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:Web.Models.Request.ReqMiniProgramLogin.encryptedData">
+            <summary>
+            加密数据
+            </summary>
+        </member>
+        <member name="P:Web.Models.Request.ReqMiniProgramLogin.iv">
+            <summary>
+            加密算法的初始向量
+            </summary>
+        </member>
+        <member name="P:Web.Models.Request.ReqMiniProgramLogin.signature">
+            <summary>
+            签名
+            </summary>
+        </member>
+    </members>
+</doc>
